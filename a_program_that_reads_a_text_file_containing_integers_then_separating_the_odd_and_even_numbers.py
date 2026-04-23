@@ -12,4 +12,11 @@ class NumberProcessor:
 
         for num in data.split():
             self.numbers.append(int(num))
-            
+
+    def separate_numbers(self):
+        for num in self.numbers:
+            if num % 2 == 0:
+                self.even_numbers.append(num)
+            else:
+                self.odd_numbers.append(num)
+                
