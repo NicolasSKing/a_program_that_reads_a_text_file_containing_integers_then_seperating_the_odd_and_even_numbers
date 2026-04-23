@@ -9,3 +9,7 @@ class NumberProcessor:
         file = open(self.filename, "r")
         data = file.read()
         file.close()
+
+        for num in data.split():
+            self.numbers.append(int(num))
+            
