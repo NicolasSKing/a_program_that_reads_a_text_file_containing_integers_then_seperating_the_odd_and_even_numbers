@@ -19,4 +19,16 @@ class NumberProcessor:
                 self.even_numbers.append(num)
             else:
                 self.odd_numbers.append(num)
-                
+
+    def making_files(self):
+        with open("even.txt", "w") as even_file:
+            for num in self.even_numbers:
+                even_file.write(str(num) + " ")
+
+        with open("odd.txt", "w") as odd_file:
+            for num in self.odd_numbers:
+                odd_file.write(str(num) + " ")
+
+
+
+
